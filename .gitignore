@@ -1,0 +1,4 @@
+instance/
+test-scripts/
+venv/
+**/__pycache__/

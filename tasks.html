@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="static/style.css">
+  <script src="../base1/cockpit.js"></script>
+</head>
+
+<body>
+  <div id="main-container" class="container">
+    <div id="header" class="header-hidden">
+      <p id="title">Task Manager</p>
+      <div id="header-actions">
+        <button id="add-task-btn" onclick="showForm(this)"></button>
+        <button id="refresh-tasks-btn" onclick="refreshTasks()"></button>
+      </div>
+    </div>
+
+    <!-- Add New Task -->
+    <div>
+      <form id="add-task-form" class="form-hidden">
+        <input id="owner" type="text" placeholder="Owner" required>
+        <input id="t-title" type="text" placeholder="Title" required>
+        <input id="description" type="text" placeholder="Description" required>
+        <button id="submit-task" type="submit"> </button>
+      </form>
+    </div>
+    
+    <!-- Edit Existing Task  -->
+    <div>
+      <form id="edit-task-form" class="form-hidden">
+        <label id="task-id-edit">x</label>
+        <input id="edit-owner" type="text" placeholder="Owner">
+        <input id="edit-title" type="text" placeholder="Title">
+        <input id="edit-description" type="text" placeholder="Description">
+        <select id="edit-select-status">
+        </select>
+        <button id="submit-task" type="submit"> </button>
+        <button id="cancel-edit" onclick="hideEditForm()" type="button"> </button>
+      </form>
+    </div>
+
+    <!-- Tasks Table -->
+    <table id="tasks-table">
+      <tr>
+        <td>ID</td>
+        <td>Owner</td>
+        <td>Title</td>
+        <td>Description</td>
+        <td>Status</td>
+        <td id="actions">Actions</td>
+      </tr>
+    </table>
+  </div>
+  <script src="static/main.js"></script>
+</body>
+
+</html>
