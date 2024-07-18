@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function (){
         container.prepend(errorEl);
 
     });
-
     //Task
     taskForm.addEventListener('submit', function(event) {
         const task = {

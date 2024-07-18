@@ -288,19 +288,6 @@ table>tfoot:not(:last-child) {
     border: 1px solid #ccc;
 }
 
-/*
-#submit-task {
-    font-weight: bolder;
-    font-size: 1rem;
-    text-align: center;
-    border: 1px solid transparent;
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 100%;
-    margin-left: 6px;
-}
-*/
-
 #add-task-form.form-hidden {display: none;}
 
 /* ------ Edit Task Form ------ */
