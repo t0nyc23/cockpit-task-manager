@@ -1,0 +1,31 @@
+#!/bin/bash
+INSTALL_DIR="/usr/share/cockpit/cockpit-task-manager"
+PYVENV=$INSTALL_DIR/venv
+SERVICE_FILE_NAME="cockpit-task-manager.service"
+SERVICE_FILE="[Unit]
+Description=Start Task Manager Plugin Service for Cockpit
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=$INSTALL_DIR
+ExecStart=$PYVENV/bin/python $INSTALL_DIR/manager.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target"
+
+chown -hR root:root $INSTALL_DIR
+
+python3 -m venv $PYVENV 
+source $PYVENV/bin/activate
+pip install -q -r $INSTALL_DIR/requirements.txt
+deactivate
+
+echo "$SERVICE_FILE" | tee /etc/systemd/system/$SERVICE_FILE_NAME > /dev/null
+
+systemctl daemon-reload
+systemctl enable cockpit-task-manager
+systemctl start cockpit-task-manager
+
+exit 0

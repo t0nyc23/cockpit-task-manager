@@ -1,4 +1,5 @@
 instance/
+build/
 test-scripts/
 venv/
 **/__pycache__/
