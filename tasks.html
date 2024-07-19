@@ -14,8 +14,8 @@
     <div id="header" class="header-hidden">
       <p id="title">Task Manager</p>
       <div id="header-actions">
-        <button id="add-task-btn" onclick="showForm(this)"></button>
-        <button id="refresh-tasks-btn" onclick="refreshTasks()"></button>
+        <button title="Add New Task" id="add-task-btn" onclick="showForm(this)"></button>
+        <button title="Refresh Tasks" id="refresh-tasks-btn" onclick="refreshTasks()"></button>
       </div>
     </div>
 
@@ -25,7 +25,7 @@
         <input id="owner" type="text" placeholder="Owner" required>
         <input id="t-title" type="text" placeholder="Title" required>
         <input id="description" type="text" placeholder="Description" required>
-        <button id="submit-task" type="submit"> </button>
+        <button title="Submit Task" id="submit-task" type="submit"> </button>
       </form>
     </div>
     
@@ -38,8 +38,8 @@
         <input id="edit-description" type="text" placeholder="Description">
         <select id="edit-select-status">
         </select>
-        <button id="submit-task" type="submit"> </button>
-        <button id="cancel-edit" onclick="hideEditForm()" type="button"> </button>
+        <button title="Apply Changes" id="submit-task" type="submit"> </button>
+        <button title="Cancel Changes" id="cancel-edit" onclick="hideEditForm()" type="button"> </button>
       </form>
     </div>
 

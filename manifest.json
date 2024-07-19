@@ -1,5 +1,14 @@
 {
-    "version": 0,
+    "version": "1.0.0",
+    "name": "cockpit-task-manager",
+    "title": "Cockpit Simple Task Manager",
+    "author": "Tony Ch. <t0nyc23@proton.me>",
+    "url": "https://github.com/t0nyc23/cockpit-task-manager",
+    "priority": "optional",
+    "description": {
+        "long": "A simple TO-DO/task manager for Cockpit.",
+        "short": "A simple TO-DO/task manager for Cockpit."
+    },
     "tools": {
         "tasks": {
             "label": "Task Manager",
