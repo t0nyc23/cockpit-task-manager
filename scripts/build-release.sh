@@ -40,6 +40,7 @@ build_source(){
     cd ../build
     zip -r cockpit-task-manager_$VERSION.zip cockpit-task-manager_$VERSION
     tar czvf cockpit-task-manager_$VERSION.tar.gz cockpit-task-manager_$VERSION
+    cd ../scripts
 
     rm -rf $SOURCERELEASE
 }
