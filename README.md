@@ -14,9 +14,13 @@ Using the Task Manager Interface, you can add a new task by providing a task own
 
 ## Adding and editing tasks preview
 
-| Adding New Task | Editing Task |
-|-----------------|--------------|
-|![alt text](images/add-task.gif)|![alt text](images/edit-task.gif)|
+| Adding New Task |
+|-----------------|
+|![alt text](images/add-task.gif)|
+
+| Editing Task |
+|--------------|
+|![alt text](images/edit-task.gif)|
 
 # Installation
 
