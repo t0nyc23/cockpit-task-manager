@@ -34,7 +34,10 @@ sudo apt install python3-venv
 ```
 ## Installation using a script
 
-todo
+Run the following `curl` command to install using the [installation script](https://github.com/t0nyc23/cockpit-task-manager/blob/main/scripts/install.sh):
+```sh
+curl -s https://raw.githubusercontent.com/t0nyc23/cockpit-task-manager/main/scripts/install.sh | sudo bash
+```
 
 ## Installation using a .deb package
 
